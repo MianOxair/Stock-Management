@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Stock Management</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./src/main2.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index2.html">Stock Management</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index2.html">Stock</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Stock <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index-Add.html">Add Stock</a></li>
+                            <li><a href="index-Update.html">Update Stock</a></li>
+                            <li><a href="index-Remove.html">Remove Stock</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="logout"><span class="glyphicon glyphicon-log-out"></span> Log&nbsp;Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-lg">
+        <h3>Stock list</h3>
+           <table class="table" id="Item-table">
+            <tr>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Item Category</th>
+                <th>Item Price ($)</th>
+                <th>Item Quantity</thead>
+            </tr>
+            <tr>
+            </tr>
+           </table>
+    </div>
+    <script src="./src/home.js"></script>
+</body>
+</html>
