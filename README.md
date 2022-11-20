@@ -1,2 +1,6 @@
 # Project-Stock Management
- Dynamic Web Development
+ Advance Web Scripting
+ 
+we need to install express and nodemon inside stock folder
+
+to run npm start
