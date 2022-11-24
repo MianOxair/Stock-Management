@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         stockName == null ||
         Price == null ||
         stockName == "" ||
-        Price == "" ||
-        Quantity == null ||
+        Price == "" || 
         Quantity == ""
       ) {
         setFormMessage(

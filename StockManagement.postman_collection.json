@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "ed96cdf4-2a74-426a-ae98-b8e2c63ac253",
+		"name": "StockManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/stockManagement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stockManagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/stockManagement/63028f72b07f8cb3e5197deb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stockManagement",
+						"63028f72b07f8cb3e5197deb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Peanut Biscuit\",\r\n    \"description\":\"Peanut Biscuit by LU pvt.Ltd.\",\r\n    \"quantity\": 100,\r\n    \"category\": \"Food\",\r\n    \"image\": \"./images/Peanut_Biscuit.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/stockManagement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stockManagement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStock",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 200,\r\n    \"description\": \"Peanut Biscuit built by LU pvt.Ltd.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/stockManagement/63028f72b07f8cb3e5197deb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stockManagement",
+						"63028f72b07f8cb3e5197deb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteStock",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/stockManagement/6302897040977d1a55d5b7fa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"stockManagement",
+						"6302897040977d1a55d5b7fa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"m.bilal.nasir@hotmail.com\",\r\n    \"password\": \"abcd@123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Bilal\",\r\n    \"lastName\": \"Nasir\",\r\n    \"email\": \"m.bilal.nasir@hotmail.com\",\r\n    \"userName\": \"m_bilal_nasir\",\r\n    \"password\": \"abcd@123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User_Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/user/6302aab1cbb25a2259e98315",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"user",
+						"6302aab1cbb25a2259e98315"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

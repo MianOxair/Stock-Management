@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastName = $("#lastName").val();
     const Username = $("#signupUsername").val();
     const email = $("#email").val();
-    const Password = $("#newpassword").val();
+    const Password = $("#UserPassword").val();
     const cpassword = $("#cpassword").val();
 
     if (
@@ -128,15 +128,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     $.ajax({
-      url: "http://localhost:3030/user/signup",
+      url: "http://localhost:3030/user/login",
       method: "POST",
       contentType: "application/json;charset=UTF-8",
       data: data,
       success: function (res) {
         console.log(res);
-        alert("User created");
         localStorage.setItem("usr", JSON.stringify(res));
-        window.location.href = "index.html";
       },
       error: function (err) {
         console.error(err);
